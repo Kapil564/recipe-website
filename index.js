@@ -33,6 +33,7 @@ async function fetchProducts() {
         const response = await fetch('https://dummyjson.com/products');
         const data = await response.json();
         allProducts = data.products; 
+        console.log(allProducts)
         displayProducts(allProducts); 
         setupCategoryFilters(); 
     } catch (error) {
@@ -64,12 +65,13 @@ function displayProducts(products) {
             </div>
         `;
         productsGrid.innerHTML += productCard;
+        
     });
 }
 
 function setupCategoryFilters() {
     const navLinks = document.querySelectorAll('.timing a');
-    
+    console.log(navLinks)
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
@@ -80,6 +82,7 @@ function setupCategoryFilters() {
             e.target.classList.add('active');
             
             const category = e.target.getAttribute('href').replace('#', '').toLowerCase();
+            console.log(category)
             filterProducts(category);
         });
     });

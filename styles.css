@@ -6,11 +6,11 @@
 }
 
 body {
-    background-color: #f5f5f5;
+    background-color: #011126;
 }
 
 header {
-    background-color: #ffffff;
+    background-color: #ac20ec;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 1rem 2rem;
 }
@@ -20,6 +20,7 @@ header {
     align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
+    border-radius:10px;
 }
 
 .logo img {
@@ -43,26 +44,30 @@ header {
 .btn {
     text-decoration: none;
     padding: 0.5rem 1rem;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .btn:first-child {
-    background-color: #ff6b6b;
+    background-color: #060167;
     color: white;
 }
 
 .btn:last-child {
     background-color: transparent;
-    color: #ff6b6b;
-    border: 2px solid #ff6b6b;
+    color: #060167;
+    border: 2px solid #060167;
 }
 
 .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+}
+
+#loginnbtn:hover{
+    color: white;
 }
 
 .timing {
@@ -83,13 +88,13 @@ header {
 }
 
 .timing a:hover {
-    background-color: #ff6b6b;
+    background-color: #592020;
     color: white;
     cursor: pointer;
 }
 
 .timing a.active {
-    background-color: #ff6b6b;
+    background-color: #592020;
     color: white;
     /* cursor: pointer; */
 }

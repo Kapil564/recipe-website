@@ -35,7 +35,8 @@
         <label for="password">Password</label>
         <input 
           id="password" 
-          type="password" 
+          type="password"
+          pattern="/^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9])(?=\S*?(?:\W|_)).{8,})$/g" 
           placeholder="Enter your password"
           required 
         />
@@ -44,7 +45,7 @@
       <button type="submit">Sign Up</button>
       
       <p style="text-align: center; margin-top: 1rem; color: #313030;">
-        Already have an account? <a href="#" style="color: #550707;">Log in</a>
+        Already have an account? <a href="../login/LogIn.html" style="color: #550707;">Log in</a>
       </p>
     </form>
   </body>

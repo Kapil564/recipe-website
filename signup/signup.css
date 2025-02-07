@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(90deg, #00C9FF 20%, #59fba5 100%);
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@ body {
 }
 
 .Signup {
-    background-color: rgb(180, 53, 239);
+    background-color: rgb(113, 147, 226);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 2, 3, 2);

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogIn - Product Hunt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+      <form class="login">
+        <div class="email">
+          <label for="email"> Email </label>
+          <input 
+          id="email"
+          type="email"
+          placeholder="Enter your email..."
+          required/>
+        </div>
+        <div class="password">
+          <label for="password"> Password </label>
+          <input 
+          id="password"
+          type="password"
+          pattern="/^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9])(?=\S*?(?:\W|_)).{8,})$/g"
+          placeholder="Password"
+          required/>
+        </div>
+        <button type="submit">Log In</button>
+        <p style="margin-top: 10px;">Don't have account? <a href="../signup/signUp.html">SignUp</a></p>
+      </form>
+      
+  </body>
+</html>
