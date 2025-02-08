@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="signup.css">
   </head>
   <body>
-    <form class="Signup">
+    <form class="Signup" id="signupForm">
       <h2 style="margin-bottom: 1.5rem; text-align: center; color: #333;">Create Account</h2>
       
       <div class="username">
@@ -36,7 +36,7 @@
         <input 
           id="password" 
           type="password"
-          pattern="/^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9])(?=\S*?(?:\W|_)).{8,})$/g" 
+          
           placeholder="Enter your password"
           required 
         />
@@ -44,9 +44,10 @@
 
       <button type="submit">Sign Up</button>
       
-      <p style="text-align: center; margin-top: 1rem; color: #313030;">
-        Already have an account? <a href="../login/LogIn.html" style="color: #550707;">Log in</a>
+      <p style="text-align: center; margin-top: 1rem; color: #666;">
+        Already have an account? <a href="../login/LogIn.html" style="color: #ff6b6b; text-decoration: none;">Log in</a>
       </p>
     </form>
+    <script src="signup.js"></script>
   </body>
 </html>

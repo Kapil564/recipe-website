@@ -3,32 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LogIn - Product Hunt</title>
+    <title>Login - Product Hunt</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="login.css">
   </head>
   <body>
-      <form class="login">
-        <div class="email">
-          <label for="email"> Email </label>
-          <input 
+    <form class="Login" id="loginForm">
+      <h2 style="margin-bottom: 1.5rem; text-align: center; color: #333;">Login</h2>
+
+      <div class="email">
+        <label for="email">Email</label>
+        <input 
           id="email"
           type="email"
-          placeholder="Enter your email..."
+          placeholder="Enter your email"
           required/>
-        </div>
-        <div class="password">
-          <label for="password"> Password </label>
-          <input 
+      </div>
+      <div class="password">
+        <label for="password">Password</label>
+        <input 
           id="password"
           type="password"
-          pattern="/^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9])(?=\S*?(?:\W|_)).{8,})$/g"
-          placeholder="Password"
+          placeholder="Enter your password"
           required/>
-        </div>
-        <button type="submit">Log In</button>
-        <p style="margin-top: 10px;">Don't have account? <a href="../signup/signUp.html">SignUp</a></p>
-      </form>
+      </div>
+
+      <button type="submit">Login</button>
       
+      <p style="text-align: center; margin-top: 1rem; color: #666;">
+        Don't have an account? <a href="../signup/signUp.html" style="color: #ff6b6b; text-decoration: none;">Sign up</a>
+      </p>
+    </form>
+    <script src="login.js"></script>
   </body>
 </html>

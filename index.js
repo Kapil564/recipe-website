@@ -118,4 +118,31 @@ function filterProducts(category) {
     displayProducts(filteredProducts);
 }
 
-document.addEventListener('DOMContentLoaded', fetchProducts);
+function checkLoginStatus() {
+    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    const loginBtn = document.getElementById('loginbtn');
+    const signupBtn = document.querySelector('.btn:first-child');
+
+    if (currentUser) {
+        // User is logged in
+        loginBtn.textContent = 'Logout';
+        loginBtn.href = '#';
+        loginBtn.onclick = function(e) {
+            e.preventDefault();
+            localStorage.removeItem('currentUser');
+            window.location.reload();
+        };
+        signupBtn.style.display = 'none';
+    } else {
+        // User is not logged in
+        loginBtn.textContent = 'Login';
+        loginBtn.href = './login/LogIn.html';
+        loginBtn.onclick = null;
+        signupBtn.style.display = 'block';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetchProducts();
+    checkLoginStatus();
+});
