@@ -47,16 +47,18 @@ A responsive e-commerce website built with HTML, CSS, and JavaScript that featur
 - Local Storage API
 
 ## Project Structure
-recipe-page/
-├── index.html
-├── styles.css
-├── index.js
-├── login/
-│ ├── LogIn.html
-│ ├── login.css
-│ └── login.js
-├── signup/
-│ ├── signUp.html
-│ ├── signup.css
-│ └── signup.js
-└── README.md
+### recipe-page
+- index.html 
+- styles.css 
+- index.js 
+### Login page
+- LogIn.html 
+- login.css 
+- login.js 
+### signup
+- signUp.html
+- signup.css 
+- signup.js
+
+
+  README.md
